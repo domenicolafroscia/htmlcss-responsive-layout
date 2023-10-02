@@ -10,3 +10,64 @@ img {
 }
 
 /* COMMON */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 70%;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+/* HEADER */
+.nav {
+    background-color: #0084FD;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+}
+
+.container-1 {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+.bars {
+    color: white;
+}
+
+.nav-1 {
+    display: none;
+}
+
+.started {
+    color: #0084FD;
+    background-color: white;
+    padding: 7px 15px;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-1 {
+        display: block;
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+}
