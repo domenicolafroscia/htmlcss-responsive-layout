@@ -82,6 +82,7 @@ main {
     margin-top: 7rem;
 }
 
+/* section demo application */
 .col{
     background-color: #B5DDFF;
     margin-top: 2rem;
@@ -90,11 +91,13 @@ main {
 
 .card {
     width: 100%;
+    /* debug */
     height: 500px;
 }
 
 .card-1 {
     width: 100%;
+    /* debug */
     height: 350px;
 }
 
@@ -114,10 +117,137 @@ main {
     }
 
     .card-2 {
+        /* debug */
         height: 500px;
     }
 
     .col {
         margin: 0;
     }
+}
+
+/* section strategic  planning */
+ .background-section-main {
+    background-color: #9792E4;
+    margin-top: 5rem;
+    padding: 5rem 0;
+ }
+
+ .strategic-planning {
+    /* debug */
+    background-color: white;
+    height: 700px;
+    width: 100%;
+}
+
+.app-developement {
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 3rem;
+    /* debug */
+    height: 500px;
+}
+
+@media screen and (min-width: 992px) {
+    .flex-1 {
+        display: flex;
+        align-items: end;
+        gap: 2rem;
+    }
+}
+
+/* section testimonials */
+.testimonial, .testimonial-1 {
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 5rem;
+    /* debug */
+    height: 500px;
+    background-color: #9792E4;
+}
+
+.testimonial-1 {
+    background-color: #9792E4;
+}
+
+/* section benefits */
+.title-h3 {
+    color: white;
+    text-align: center;
+}
+
+.col-1 {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 3rem;
+    /* debug */
+    height: 400px;
+}
+
+@media screen and (min-width: 768px) {
+    .row-1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .title-h3 {
+        padding-bottom: 3rem;
+    }
+
+    .col-1 {
+        width: calc(100% / 2 - 1rem / 2);
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .row-1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .title-h3 {
+        padding-bottom: 3rem;
+    }
+
+    .col-1 {
+        width: calc(100% / 3 - 2rem / 3);
+        margin: 0;
+    }
+}
+
+/* section about us */
+.col-2 {
+    /* debug */
+    width: 100%;
+    background-color: #9792E4;
+}
+
+.col-long {
+    margin-top: 3rem;
+    /* debug */
+    height: 800px;
+}
+
+.col-short {
+    margin-top: 3rem;
+    /* debug */
+    height: 500px;
+}
+
+@media screen and (min-width: 768px) {
+    .row-2 {
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+/* section get started */
+.debug {
+    /* debug */
+    height: 800px;
 }
