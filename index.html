@@ -7,8 +7,14 @@
     <title>Layout Responsive</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +29,7 @@
                 <li><a href="">About Us</a></li>
                 <li><a class="started" href="">Get Started</a></li>
             </ul>
-            <a class="bars" href=""><i class="fa-solid fa-bars"></i></a>
+            <button class="bars"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
     <!-- /header -->
@@ -31,14 +37,44 @@
     <!-- main -->
     <main>
         <!-- section demo application -->
-        <section>
+        <section class="demo">
             <div class="container">
                 <div class="row">
-                    <div class="col card"></div>
-                    <div class="col card-1 card-2"></div>
-                    <div class="col card-1"></div>
-                    <div class="col card-1"></div>
-                    <div class="col card-1"></div>
+                    <div class="col card">
+                        <div>
+                            <h3>Get a demo application</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad
+                                dolore quod, facere totam quas recusandae blanditiis.</p>
+                            <a class="app-store" href=""><i class="apple fa-brands fa-apple"></i>App store</a>
+                        </div>
+                        <div class="demo-img">
+                            <img src="img/phone.png" alt="Phone image">
+                        </div>
+                    </div>
+                    <div class="col card-1 card-2">
+                        <i class="icons fa-solid fa-file-code"></i>
+                        <h3>Clean code</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas recusandae blanditiis.</p>
+                    </div>
+                    <div class="col card-1">
+                        <i class="icons fa-solid fa-compass-drafting"></i>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas recusandae blanditiis.</p>
+                    </div>
+                    <div class="col card-1">
+                        <i class="icons fa-solid fa-laptop-code"></i>
+                        <h3>Developement</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas recusandae blanditiis.</p>
+                    </div>
+                    <div class="col card-1">
+                        <i class="icons fa-solid fa-bullhorn"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis, architecto ad dolore
+                            quod, facere totam quas recusandae blanditiis.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -48,10 +84,18 @@
         <section class="background-section-main">
             <div class="flex-1 container">
                 <div class="strategic-planning">
-                    <img src="img/planning1.png" alt="">
+                    <img src="img/planning1.png" alt="planning image">
+                    <h3>Strategic Planning</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed ratione
+                        reprehenderit impedit incidunt eos minus! Ratione delectus, corporis eaque nesciunt reiciendis
+                        atque rem quis distinctio accusamus cupiditate.</p>
                 </div>
                 <div class="app-developement">
-
+                    <img src="img/planning2.png" alt="planning image">
+                    <h3>App Developement</h3>
+                    <p>Develop an on-demand app for your delivery business to reach your targeted customers without any
+                        interruption.</p>
+                    <a class="arrow-down" href=""><i class="fa-solid fa-arrow-down-long"></i></a>
                 </div>
             </div>
         </section>
@@ -60,10 +104,45 @@
         <!-- section testimonials -->
         <section>
             <div class="container">
-                <div class="testimonial"></div>
-                <div class="testimonial-1"></div>
-                <div class="testimonial-1"></div>
-                <div class="testimonial-1"></div>
+                <div class="testimonial">
+                    <p>TESTIMONIALS</p>
+                    <h3>We are committed expert partners</h3>
+                    <p>We place huge value on strong relationships and have seen the benefit they bring to our business.
+                        Customer feedback is vital in helping us to get it right.</p>
+                </div>
+                <div class="testimonial-1">
+                    <div class="img-testimonial">
+                        <img src="img/testimonial1.jpg" alt="testimonial photo-1">
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consequuntur libero alias sed ratione reprehenderit impedit incidunt eos minus!<i
+                                class="fa-solid fa-quote-right"></i></p>
+                        <span>NAT REYNOLDS</span>
+                    </div>
+                </div>
+                <div class="testimonial-1">
+                    <div class="img-testimonial">
+                        <img src="img/testimonial2.jpg" alt="testimonial photo-2">
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consequuntur libero alias sed ratione reprehenderit impedit incidunt eos minus!<i
+                                class="fa-solid fa-quote-right"></i></p>
+                        <span>CELIA ALMEDA</span>
+                    </div>
+                </div>
+                <div class="testimonial-1">
+                    <div class="img-testimonial">
+                        <img src="img/testimonial3.jpg" alt="testimonial photo-3">
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-quote-left"></i>Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Consequuntur libero alias sed ratione reprehenderit impedit incidunt eos minus!<i
+                                class="fa-solid fa-quote-right"></i></p>
+                        <span>BOB ROBERTS</span>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- /section testimonials -->
@@ -73,12 +152,48 @@
             <div class="container">
                 <h3 class="title-h3">Benefits of working with us</h3>
                 <div class="row-1">
-                    <div class="col-1"></div>
-                    <div class="col-1"></div>
-                    <div class="col-1"></div>
-                    <div class="col-1"></div>
-                    <div class="col-1"></div>
-                    <div class="col-1"></div>
+                    <div class="col-1">
+                        <h3>01</h3>
+                        <h4>Hight Quality</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus.</p>
+                        <a class="more" href="">more</a>
+                    </div>
+                    <div class="col-1">
+                        <h3>02</h3>
+                        <h4>Creative Team</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus.</p>
+                        <a class="more" href="">more</a>
+                    </div>
+                    <div class="col-1">
+                        <h3>03</h3>
+                        <h4>Amazing Results</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus.</p>
+                        <a class="more" href="">more</a>
+                    </div>
+                    <div class="col-1">
+                        <h3>04</h3>
+                        <h4>Best Prycing</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus.</p>
+                        <a class="more" href="">more</a>
+                    </div>
+                    <div class="col-1">
+                        <h3>05</h3>
+                        <h4>Innvovations</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus.</p>
+                        <a class="more" href="">more</a>
+                    </div>
+                    <div class="col-1">
+                        <h3>06</h3>
+                        <h4>24/7 Support</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus.</p>
+                        <a class="more" href="">more</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,10 +203,30 @@
         <section>
             <div class="container">
                 <div class=" row-2">
-                  <div class="col-2 col-long"></div>
-                  <div class="col-2 col-short"></div>
+                    <div class="col-2 col-long">
+                        <h3>About Us</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Consequuntur libero alias sed
+                            ratione reprehenderit impedit incidunt eos minus. Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Consequuntur libero alias sed ratione reprehenderit impedit incidunt eos
+                            minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur libero alias
+                            sed ratione reprehenderit impedit incidunt eos minus.</p>
+                        <p class="p-2-about-us">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Consequuntur
+                            libero alias sed ratione reprehenderit impedit incidunt eos minus. Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Consequuntur libero alias sed ratione reprehenderit
+                            impedit incidunt eos minus.</p>
+                    </div>
+                    <div class="col-2 col-short">
+                        <div class="image-about-us">
+                            <img class="img-about-us" src="img/about.jpg" alt="about us photo">
+                            <i class="quote-up fa-solid fa-quote-left"></i>
+                        </div>
+                        <p>I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</p>
+                        <a class="linkedin" href=""> <i class="logo-linkedin fa-brands fa-linkedin"></i>Find me on
+                            linkedin</a>
+                    </div>
                 </div>
-                
             </div>
         </section>
         <!-- /section about us -->
@@ -99,7 +234,15 @@
         <!-- section get started -->
         <section class="background-section-main">
             <div class="container">
-                <div class="debug"></div>
+                <div class="get-started">
+                    <h4>GET STARTED</h4>
+                    <h3>Simple, Transparent Pricing</h3>
+                    <h2>It's Free</h2>
+                    <p class="p-1">We're still in beta and we will be for awhile. As we add more functionality,   we'll look into other plans with more controls.</p>
+                    <a class="get-started-btn" href="">Get Started</a>
+                    <p class="p-2">Copyright 2021 Boolean • Classe XX • <a class="privacy" href="">Privacy policy</a></p>
+
+                </div>
             </div>
         </section>
         <!-- /section get started -->

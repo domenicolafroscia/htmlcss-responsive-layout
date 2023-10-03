@@ -10,9 +10,17 @@ img {
 }
 
 /* COMMON */
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 a {
     color: white;
     text-decoration: none;
+}
+
+p {
+    font-family: initial;
 }
 
 .container {
@@ -47,6 +55,11 @@ nav {
 
 .bars {
     color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
 }
 
 .nav-1 {
@@ -89,16 +102,47 @@ main {
     border-radius: 20px;
 }
 
+.demo h3 {
+    color: #0084FD;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+}
+
+.demo p {
+    color: #617789;
+    padding-bottom: 2rem;
+}
+
+.app-store {
+    background-color: #0084FD;
+    padding: .5rem 3rem;
+    border-radius: 20px;
+}
+
+.apple {
+    margin-right: 10px;
+}
+
+.demo img {
+    padding-top: 2rem;
+    display: block;
+}
+
+.icons {
+    font-size: 5rem;
+    color: #0084FD;
+}
+
 .card {
     width: 100%;
-    /* debug */
-    height: 500px;
+    padding: 0 1.5rem;
+    bottom: 50%;
 }
 
 .card-1 {
     width: 100%;
-    /* debug */
-    height: 350px;
+    padding: 1.5rem 1.5rem 0;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -116,13 +160,18 @@ main {
         width: calc(100% / 3 - 1rem);
     }
 
-    .card-2 {
-        /* debug */
-        height: 500px;
-    }
-
     .col {
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        display: flex;
+    }
+
+    .demo-img {
+        align-self: flex-end;
     }
 }
 
@@ -130,14 +179,17 @@ main {
  .background-section-main {
     background-color: #9792E4;
     margin-top: 5rem;
-    padding: 5rem 0;
+    padding: 3rem 0;
  }
 
  .strategic-planning {
-    /* debug */
-    background-color: white;
-    height: 700px;
     width: 100%;
+    color: white;
+}
+
+.strategic-planning h3 {
+    padding: 2rem 0;
+    font-size: 2rem;
 }
 
 .app-developement {
@@ -145,8 +197,26 @@ main {
     border-radius: 30px;
     width: 100%;
     margin-top: 3rem;
-    /* debug */
-    height: 500px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.app-developement img {
+    width: 80%;
+    padding-bottom: 2rem 0;
+}
+
+.app-developement p {
+    font-style: oblique;
+    padding: 1.5rem 0;
+}
+
+.arrow-down {
+    background-color: #9792E4;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+
 }
 
 @media screen and (min-width: 992px) {
@@ -161,20 +231,48 @@ main {
 .testimonial, .testimonial-1 {
     width: 100%;
     border-radius: 30px;
-    margin-top: 5rem;
-    /* debug */
-    height: 500px;
-    background-color: #9792E4;
+    margin-top: 2rem;
+    text-align:center;
+}
+
+.testimonial h3 {
+    color: #9792E4;
+    font-size: 1.5rem;
+    padding: 2rem 0;
 }
 
 .testimonial-1 {
     background-color: #9792E4;
+    color: white;
+    padding: 1.5rem;
+}
+
+.testimonial-1 img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-1 p {
+    padding: 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial-1 {
+        display: flex;
+    }
+
+    .img-testimonial {
+        width: 12rem;
+    }
 }
 
 /* section benefits */
 .title-h3 {
     color: white;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .col-1 {
@@ -182,8 +280,28 @@ main {
     background-color: white;
     border-radius: 20px;
     margin-top: 3rem;
-    /* debug */
-    height: 400px;
+    padding: 1.5rem;
+}
+
+.col-1 h3 {
+    color: #9792E4;
+    font-size: 1.5rem;
+}
+
+.col-1 h4 {
+    color: #9792E4;
+    padding: 1.5rem 0;
+}
+
+.col-1 p {
+    color: #969696;
+    padding-bottom: 1.5rem;
+}
+
+.more {
+    background-color: #9792E4;
+    padding: .3rem 2rem;
+    border-radius: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -221,22 +339,57 @@ main {
 }
 
 /* section about us */
-.col-2 {
-    /* debug */
-    width: 100%;
-    background-color: #9792E4;
-}
-
 .col-long {
     margin-top: 3rem;
-    /* debug */
-    height: 800px;
+    width: 100%;
 }
 
 .col-short {
-    margin-top: 3rem;
-    /* debug */
-    height: 500px;
+    width: 100%;
+}
+
+.col-long h3 {
+    color: #9792E4;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.p-2-about-us {
+    padding: 2rem 0;
+}
+
+.image-about-us {
+    position: relative;
+}
+
+.img-about-us {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.quote-up {
+    color: #9792E4;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 135px;
+}
+
+.col-short p {
+    color: #9792E4;
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.linkedin {
+    background-color: #9792E4;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+.logo-linkedin {
+    margin-right: .5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -244,12 +397,59 @@ main {
         display: flex;
         gap: 5rem;
     }
+
+    .col-long {
+        width: 60%;
+    }
+
+    .col-short {
+        width: 40%;
+        margin-top: 3rem;
+    }
 }
 
 /* section get started */
-.debug {
-    /* debug */
-    height: 800px;
+.get-started {
+    text-align: center;
+    color: white;
+}
+
+.get-started h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+}
+
+.get-started h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 .5rem;
+}
+
+.get-started h2 {
+    color: #FDC15F;
+    font-size: 3rem;
+}
+
+.get-started p {
+    font-size: .8rem;
+}
+
+.p-1 {
+    margin: 2rem 0;
+}
+
+.p-2 {
+    margin-top: 2rem;
+}
+
+.get-started-btn {
+    color: #9792E4;
+    background-color: white;
+    padding: .8rem 4rem;
+    border-radius: 30px;
+}
+
+.privacy {
+    text-decoration: underline;
 }
 
 /* FOOTER */
