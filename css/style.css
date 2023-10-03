@@ -457,6 +457,17 @@ main {
     background-color: #333333;
 }
 
-.debug-1 {
-    height: 500px;
+.footer {
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    font-size: .8rem;
+    padding: 1.5rem 0;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: #9792E4;
 }
