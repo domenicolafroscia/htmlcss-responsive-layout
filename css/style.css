@@ -360,6 +360,7 @@ main {
 
 .image-about-us {
     position: relative;
+    width: 100px;
 }
 
 .img-about-us {
@@ -373,7 +374,7 @@ main {
     font-size: 2rem;
     position: absolute;
     top: 0;
-    right: 135px;
+    right: 0;
 }
 
 .col-short p {
